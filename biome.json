@@ -4,7 +4,8 @@
     "enabled": false
   },
   "files": {
-    "ignoreUnknown": true
+    "ignoreUnknown": true,
+    "includes": ["**", "!!dist", "!!node_modules", "!!build"]
   },
   "formatter": {
     "enabled": true,
