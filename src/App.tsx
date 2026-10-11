@@ -9,31 +9,36 @@ import { RootLayout } from '@/layouts/RootLayout.tsx';
 import { HomePage } from '@/pages/HomePage.tsx';
 import { PrivacyPolicyPage } from '@/pages/PrivacyPolicyPage.tsx';
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <RootLayout />,
+      children: [
+        {
+          index: true,
+          element: <HomePage />
+        },
+        {
+          path: 'privacy-policy',
+          element: <PrivacyPolicyPage />
+        }
+      ]
+    },
+    {
+      path: '*',
+      element: (
+        <Navigate
+          to='/'
+          replace={true}
+        />
+      )
+    }
+  ],
   {
-    path: '/',
-    element: <RootLayout />,
-    children: [
-      {
-        index: true,
-        element: <HomePage />
-      },
-      {
-        path: 'privacy-policy',
-        element: <PrivacyPolicyPage />
-      }
-    ]
-  },
-  {
-    path: '*',
-    element: (
-      <Navigate
-        to='/'
-        replace={true}
-      />
-    )
+    basename: import.meta.env.BASE_URL
   }
-]);
+);
 
 export const App = () => (
   <div className='app'>
