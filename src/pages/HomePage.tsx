@@ -8,10 +8,10 @@ type HomePageContent = {
 };
 
 const content: HomePageContent = {
-  title: 'Trenero',
+  title: 'Trenerio',
   subtitle:
-    'Trenero is a comprehensive management platform designed to help independent trainers, coaches, and tutors streamline their business operations. By centralizing student coordination, scheduling, and financial tracking, it allows professionals to focus on training rather than administration.',
-  imageAlt: 'Trenero App Interface Preview',
+    'Trenerio is a comprehensive management platform designed to help independent trainers, coaches, and tutors streamline their business operations. By centralizing student coordination, scheduling, and financial tracking, it allows professionals to focus on training rather than administration.',
+  imageAlt: 'Trenerio App Interface Preview',
   playStoreUrl: 'https://play.google.com/store/apps/details?id=APP_ID'
 };
 

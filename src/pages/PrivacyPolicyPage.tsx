@@ -13,7 +13,7 @@ export const PrivacyPolicyPage = () => (
   >
     <h1>Privacy Policy</h1>
     <p>
-      This privacy policy applies to the <strong>Trenero</strong> app (hereby
+      This privacy policy applies to the <strong>Trenerio</strong> app (hereby
       referred to as "Application") for mobile devices that was created by{' '}
       <strong>Krivolapov Vladislav</strong> (hereby referred to as "Service
       Provider") as a Free service. This service is intended for use "AS IS".
@@ -70,7 +70,7 @@ export const PrivacyPolicyPage = () => (
     <ul>
       <li>
         <strong>In-App Deletion (Instant):</strong> You can delete your account
-        and all associated data directly within the <strong>Trenero</strong>{' '}
+        and all associated data directly within the <strong>Trenerio</strong>{' '}
         app. Navigate to your Settings and select "Delete Account". This action
         is processed <strong>immediately</strong> and is irreversible.
       </li>

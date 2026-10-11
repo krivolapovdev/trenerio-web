@@ -1,4 +1,14 @@
-# dependencies (bun install)
+# IntelliJ IDEA
+.idea
+*.iws
+*.iml
+*.ipr
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+
+# dependencies (npm install)
 node_modules
 
 # output
