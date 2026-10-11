@@ -1,5 +1,6 @@
 {
   "name": "trenerio",
+  "homepage": "https://krivolapovdev.github.io/trenerio-web",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -7,7 +8,9 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "start": "vite preview",
-    "biome": "biome check --write --unsafe"
+    "biome": "biome check --write --unsafe",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "embla-carousel-react": "^8.6.0",
@@ -21,6 +24,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@vitejs/plugin-react": "^6.1.2",
+    "gh-pages": "^6.3.0",
     "typescript": "^7.0.2",
     "vite": "^8.3.4"
   }
